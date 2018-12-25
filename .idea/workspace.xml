@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c033ecfc-002b-4ba5-9a36-ff8b67d042fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Airport.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Airport.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Flight.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Flight.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/v1/FlightController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/v1/FlightController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/v1/FlightServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/v1/FlightServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Services/v1/FlightsServices.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/v1/FlightsServices.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_25_050845_create_flights_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_25_050845_create_flights_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,8 +48,8 @@
           <entry key="env" value="2" />
           <entry key="example" value="1" />
           <entry key="gitignore" value="4" />
-          <entry key="php" value="36" />
-          <entry key="sql" value="4" />
+          <entry key="php" value="38" />
+          <entry key="sql" value="5" />
           <entry key="users" value="1" />
         </counts>
       </usages-collector>
@@ -58,23 +57,23 @@
         <counts>
           <entry key=".env file" value="3" />
           <entry key="Database Element" value="2" />
-          <entry key="PHP" value="36" />
+          <entry key="PHP" value="38" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Scratch" value="4" />
+          <entry key="Scratch" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="env" value="6" />
           <entry key="gitignore" value="10" />
-          <entry key="php" value="3019" />
+          <entry key="php" value="3481" />
           <entry key="sql" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="6" />
-          <entry key="PHP" value="3019" />
+          <entry key="PHP" value="3481" />
           <entry key="PLAIN_TEXT" value="10" />
           <entry key="Scratch" value="54" />
         </counts>
@@ -86,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Services/v1/FlightsServices.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="91" column="25" lean-forward="true" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
+            <state relative-caret-position="158">
+              <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
               <folding>
                 <element signature="e#35#51#0#PHP" expanded="true" />
                 <element signature="e#109#125#0#PHP" />
@@ -95,6 +94,7 @@
                 <element signature="e#344#629#0#PHP" />
                 <element signature="e#785#1430#0#PHP" />
                 <element signature="e#1715#2610#0#PHP" />
+                <element signature="e#2700#3685#0#PHP" />
                 <element signature="e#783#2057#0#PHP" />
                 <element signature="e#2063#2409#0#PHP" />
                 <element signature="e#2465#2811#0#PHP" />
@@ -106,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/v1/FlightController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="91" column="43" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
+            <state relative-caret-position="183">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="e#43#77#0#PHP" expanded="true" />
               </folding>
@@ -116,10 +116,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c8076e9c-64b5-4bb0-b314-aa9024e059fc/console.sql">
+        <entry file="file://$PROJECT_DIR$/app/Providers/v1/FlightServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+            <state relative-caret-position="368">
+              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+              <folding>
+                <element signature="e#36#70#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/lang/en/validation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="118" column="17" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -145,7 +157,6 @@
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/database/factories/FlightModelFactory.php" />
-        <option value="$PROJECT_DIR$/app/Providers/v1/FlightServiceProvider.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/.idea/.gitignore" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -154,9 +165,11 @@
         <option value="$PROJECT_DIR$/app/Flight.php" />
         <option value="$PROJECT_DIR$/app/Airport.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/c8076e9c-64b5-4bb0-b314-aa9024e059fc/console.sql" />
         <option value="$PROJECT_DIR$/app/Services/v1/FlightsServices.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/v1/FlightController.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/c8076e9c-64b5-4bb0-b314-aa9024e059fc/console.sql" />
+        <option value="$PROJECT_DIR$/resources/lang/en/validation.php" />
+        <option value="$PROJECT_DIR$/app/Providers/v1/FlightServiceProvider.php" />
       </list>
     </option>
   </component>
@@ -266,7 +279,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="751" />
+    <option name="width" value="659" />
     <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -285,7 +298,20 @@
             <path>
               <item name="REST Laravel" type="b2602c69:ProjectViewProjectNode" />
               <item name="REST Laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="REST Laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="REST Laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="REST Laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="REST Laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+              <item name="en" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -297,7 +323,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -327,23 +353,23 @@
       <option name="presentableId" value="Default" />
       <updated>1545712660822</updated>
       <workItem from="1545712663244" duration="73000" />
-      <workItem from="1545712817332" duration="19777000" />
+      <workItem from="1545712817332" duration="20903000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19850000" />
+    <option name="totallyTimeSpent" value="20976000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <frame x="-7" y="0" width="659" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.31290323" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.312187" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Database Console" visible="true" weight="0.4924623" />
+      <window_info anchor="bottom" id="Database Console" weight="0.5060241" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -359,7 +385,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Git Scope" order="3" side_tool="true" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.1656535" />
+      <window_info anchor="right" id="Database" order="4" weight="0.1656535" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,16 +485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/v1/FlightServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#36#70#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -480,13 +496,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c8076e9c-64b5-4bb0-b314-aa9024e059fc/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -521,10 +530,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c8076e9c-64b5-4bb0-b314-aa9024e059fc/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="31" lean-forward="true" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c8076e9c-64b5-4bb0-b314-aa9024e059fc/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Services/v1/FlightsServices.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="91" column="25" lean-forward="true" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
+        <state relative-caret-position="158">
+          <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
           <folding>
             <element signature="e#35#51#0#PHP" expanded="true" />
             <element signature="e#109#125#0#PHP" />
@@ -532,6 +555,7 @@
             <element signature="e#344#629#0#PHP" />
             <element signature="e#785#1430#0#PHP" />
             <element signature="e#1715#2610#0#PHP" />
+            <element signature="e#2700#3685#0#PHP" />
             <element signature="e#783#2057#0#PHP" />
             <element signature="e#2063#2409#0#PHP" />
             <element signature="e#2465#2811#0#PHP" />
@@ -541,18 +565,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/v1/FlightController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="91" column="43" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
+        <state relative-caret-position="183">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="e#43#77#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c8076e9c-64b5-4bb0-b314-aa9024e059fc/console.sql">
+    <entry file="file://$PROJECT_DIR$/resources/lang/en/validation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+        <state relative-caret-position="251">
+          <caret line="118" column="17" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/v1/FlightServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding>
+            <element signature="e#36#70#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

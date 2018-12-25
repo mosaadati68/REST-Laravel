@@ -36,6 +36,8 @@ class FlightController extends Controller
      */
     public function store(Request $request)
     {
+        $this->flights->validate($request->all());
+
         try {
             $flight = $this->flights->createFlight($request);
             return response()->json($flight, 201);
@@ -70,11 +72,9 @@ class FlightController extends Controller
         try {
             $flight = $this->flights->createFlight($request, $id);
             return response()->json($flight, 200);
-        }
-        catch (ModelNotFoundException $ex){
+        } catch (ModelNotFoundException $ex) {
             throw $ex;
-        }
-        catch (Exception $e) {
+        } catch (Exception $e) {
             return response()->json(['message' => $e->getMessage()], 500);
         }
     }
@@ -90,11 +90,9 @@ class FlightController extends Controller
         try {
             $flight = $this->flights->deleteFlight($id);
             return response()->make('', 204);
-        }
-        catch (ModelNotFoundException $ex){
+        } catch (ModelNotFoundException $ex) {
             throw $ex;
-        }
-        catch (Exception $e) {
+        } catch (Exception $e) {
             return response()->json(['message' => $e->getMessage()], 500);
         }
     }

@@ -4,6 +4,7 @@ namespace App\Services\v1;
 
 use App\Airport;
 use App\Flight;
+use Dotenv\Validator;
 use http\Env\Request;
 use function Symfony\Component\Debug\Tests\testHeader;
 
@@ -18,6 +19,21 @@ class FlightService
         'status',
         'flightNumber'
     ];
+
+    protected $rules = [
+        'flightNumber' => 'required',
+        'status' => 'required|flightstatus',
+        'arrival.datetime' => 'required|date',
+        'arrival.iataCode' => 'required',
+        'departure.datetime' => 'required|date',
+        'departure.iataCode' => 'required'
+    ];
+
+    public function validate($flight)
+    {
+        $validator = Validator::make($flight, $this->rules);
+        $validator->validate();
+    }
 
     public function getFlights($parameters)
     {
@@ -60,7 +76,7 @@ class FlightService
 
     public function updateFlight($req, $flightNumber)
     {
-        $flight = Flight::where('flightNumber',$flightNumber)->firstOrFail();
+        $flight = Flight::where('flightNumber', $flightNumber)->firstOrFail();
         $arrivalAirport = $req->input('arrival.iataCode');
         $departureAirport = $req->input('departure.iataCode');
         $airports = Airport::whereIn('iataCode',
@@ -87,7 +103,7 @@ class FlightService
 
     public function deleteFlight($flightNumber)
     {
-        $flight = Flight::where('flightNumber',$flightNumber)->firstOrFail();
+        $flight = Flight::where('flightNumber', $flightNumber)->firstOrFail();
 
         $flight->delete();
     }
