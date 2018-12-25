@@ -17,6 +17,6 @@ class Airport extends Model
 
     public function departureAirport()
     {
-        return $this->hasMany('App\Flight', 'depatureAirport_id');
+        return $this->hasMany('App\Flight', 'departureAirport_id');
     }
 }
