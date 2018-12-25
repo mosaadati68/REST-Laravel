@@ -20,9 +20,10 @@ class FlightController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $data = $this->flights->getFlights();
+        $parameters = $request->input();
+        $data = $this->flights->getFlights($parameters);
         return response()->json($data);
     }
 
@@ -55,7 +56,8 @@ class FlightController extends Controller
      */
     public function show($id)
     {
-        //
+        $data = $this->flights->getFlight($id);
+        return response()->json($data);
     }
 
     /**

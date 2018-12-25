@@ -6,12 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Flight extends Model
 {
-    public function arrivingFlights()
+    public function arrivalAirport()
     {
         return $this->belongsTo('App\Airport', 'arrivalAirport_id');
     }
 
-    public function departingFlights()
+    public function departureAirport()
     {
         return $this->belongsTo('App\Airport', 'depatureAirport_id');
     }

@@ -6,12 +6,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Airport extends Model
 {
-    public function arrivingFlights()
+    protected $fillable = [
+        'iataCode', 'city', 'state'
+    ];
+
+    public function arrivalAirport()
     {
         return $this->hasMany('App\Flight', 'arrivalAirport_id');
     }
 
-    public function departingFlights()
+    public function departureAirport()
     {
         return $this->hasMany('App\Flight', 'depatureAirport_id');
     }
