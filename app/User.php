@@ -28,10 +28,16 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function save(array $option = []){
-        if (empty($this->api_token)){
+    public function save(array $option = [])
+    {
+        if (empty($this->api_token)) {
             $this->api_token = str_random(60);
         }
         return parent::save($option);
+    }
+
+    public function isAdmin()
+    {
+        return $this->admin;
     }
 }
